@@ -41,4 +41,9 @@ public class AppController {
         app.setRemark("remark1");
         return appService.createApp(app);
     }
+
+    @RequestMapping("/aop")
+    public String aop() {
+        return appService.aop();
+    }
 }

@@ -37,4 +37,10 @@ public class AppService {
 //        int i = 1 / 0;
         return appRepository.save(app);
     }
+
+    public String aop() {
+        int i = 1 / 0;
+        System.out.println("方法正常调用");
+        return "返回一个字符串";
+    }
 }
